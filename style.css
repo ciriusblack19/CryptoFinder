@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;700&display=swap');
+body {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    color: #222;
+    font-family: 'Open-Sans', sans-serif;
+    background-image: url(https://picsum.photos/1900);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+span {
+    font-weight: bold;
+    font-size: large;
+}
+
+.card {
+    background: #000000d0;
+    color: white;
+    padding: 35px;
+    border-radius: 30px;
+    width: 100%;
+    max-width: 420px;
+    text-align: center;
+}
+
+.coins.loading {
+    visibility: hidden;
+    max-height: 20px;
+    position: relative;
+}
+
+.coins.loading:after {
+    visibility: visible;
+    content: "Caricamento...";
+    color: #fff;
+    position: absolute;
+    top: 0;
+}
+
+.coinCard {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search button {
+    margin: 0.5em;
+    border-radius: 50%;
+    border: none;
+    height: 2.5em;
+    width: 2.5em;
+    background: #7c7c7c2b;
+    color: white;
+    transition: 0.2s ease-in-out;
+}
+
+.search button:hover {
+    background: #7c7c7c6b;
+    cursor: pointer;
+}
+
+.search .search-bar {
+    border: none;
+    outline: none;
+    width: calc(100% - 100px);
+    padding: 0.5em 1em;
+    border-radius: 18px;
+    background: #7c7c7c2b;
+    color: white;
+    font-size: 120%;
+}
+
+img {
+    max-width: 50px;
+    max-height: 50px;
+    margin-left: 15px;
+}
+
+.price {
+    color: rgb(4, 172, 4);
+}
+
+.rank,
+.supply {
+    color: gray;
+}
